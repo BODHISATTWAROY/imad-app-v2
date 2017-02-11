@@ -18,7 +18,7 @@ app.get('/Article-Two', function(req, res){
 });
 
 app.get('/Article-Three', function(req, res){
-    res.send('Article Three Requested And Will Be Served Here'); 
+    res.sendFile(path.join(__dirname, 'ui', 'Article-Three-My Favourites.html')); 
 });
 
 app.get('/ui/style.css', function (req, res) {
