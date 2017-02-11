@@ -14,7 +14,7 @@ app.get('/Article-One', function(req, res){
 });
 
 app.get('/Article-Two', function(req, res){
-    res.send('Article Two Requested And Will Be Served Here'); 
+     res.sendFile(path.join(__dirname, 'ui', 'Article-Two-Family.html'));
 });
 
 app.get('/Article-Three', function(req, res){
