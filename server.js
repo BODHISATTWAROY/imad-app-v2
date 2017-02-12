@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles = {
-    articleOne: {
+    'Article-One': {
          title: 'Article-One',
          heading1:  'Article One',
          heading2:  'Personal Information:BODHISATTWA ROY',
@@ -40,7 +40,7 @@ var articles = {
             I have worked as a Graduate Apprentice Trainee(BOPT) in Garden Reach Shipbuilders & Engineers Limited(GRSE Ltd.) FOJ unit from 29.05.2015 to 28.05.2016.
            </p>`    
 },
-    articleTwo: { 
+    'Article-Two': { 
          title: 'Article-Two',
          heading1:  'Article Two',
          heading2:  'Family:BODHISATTWA ROY',
@@ -68,7 +68,7 @@ var articles = {
               I love my family very much.
           </p>`
           },
-    articleThree: {
+    'Article-Three': {
          title: 'Article-Three',
          heading1:  'Article Three',
          heading2:  'My Favourites:BODHISATTWA ROY',
@@ -147,8 +147,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/Article-One', function(req, res){
-     res.send(createTemplate(articleOne));
+app.get('/:articleName', function(req, res){
+    //articleName == Article-One
+    //articles[articleName] == {} content object for Article-One
+     res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/Article-Two', function(req, res){
