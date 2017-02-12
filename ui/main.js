@@ -6,7 +6,7 @@ var element = document.getElementById('main-text');
 element.innerHTML = 'New value';
 
 //Move The Image
-var img = document.getElementById('img');
+var img = document.getElementById('bodhi1');
 img.onclick = function () {
     img.style.marginLeft = '100px';
 };
