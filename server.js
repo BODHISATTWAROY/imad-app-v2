@@ -120,7 +120,7 @@ function createTemplate (data) {
       <body>
          <div class="container">
            <div>
-              <a href="/">Home</a>
+              <a href="/">Home< "/">Article-One</a>
            </div>
            <hr/>
            <hr/>
