@@ -150,16 +150,11 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function(req, res){
     //articleName == Article-One
     //articles[articleName] == {} content object for Article-One
+     var articleName = req.params.articleName;
      res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/Article-Two', function(req, res){
-     res.sendFile(path.join(__dirname, 'ui', 'Article-Two-Family.html'));
-});
 
-app.get('/Article-Three', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'Article-Three-My Favourites.html')); 
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
