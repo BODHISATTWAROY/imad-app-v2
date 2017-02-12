@@ -6,13 +6,14 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleOne = {
-    title: 'Article One',
-    heading1:  'Article One',
-    heading2:  'Personal Information:BODHISATTWA ROY',
-    date: 'Feb 11, 2017',
-    content: 
-           `<p>
+var articles = {
+    articleOne: {
+         title: 'Article-One',
+         heading1:  'Article One',
+         heading2:  'Personal Information:BODHISATTWA ROY',
+         date: 'Feb 11, 2017',
+    content:
+          `<p>
               I am Bodhisattwa Roy.
            </p>
            <p>
@@ -37,7 +38,69 @@ var articleOne = {
            </p>
            <p>
             I have worked as a Graduate Apprentice Trainee(BOPT) in Garden Reach Shipbuilders & Engineers Limited(GRSE Ltd.) FOJ unit from 29.05.2015 to 28.05.2016.
-           </p>`
+           </p>`    
+},
+    articleTwo: { 
+         title: 'Article-Two',
+         heading1:  'Article Two',
+         heading2:  'Family:BODHISATTWA ROY',
+         date: 'Feb 11, 2017',
+    content:
+          `<p>
+             My father is Mr. Dilip Kumar Roy.
+          </p>
+          <p>
+              He is an Agent of L.I.C.I.
+          </p>
+          <p>
+             My mother is Smt. Minati Roy.
+          </p>
+          <p>
+             She is an Housewife.
+          </p>
+          <p>
+              My brother is Mr. Budhaditya Roy.
+          </p>
+          <p>
+             He Has completed his B.Sc. in Physics from Burdwan University in 2014 an completed his M.Sc. in Electronic Science from Jadavpur University in 2016.
+          </p>
+          <p>
+              I love my family very much.
+          </p>`
+          },
+    articleThree: {
+         title: 'Article-Three',
+         heading1:  'Article Three',
+         heading2:  'My Favourites:BODHISATTWA ROY',
+         date: 'Feb 11, 2017',
+    content:
+         `<p>
+              I love to play Cricket and Chess.
+          </p>
+          <p>
+              Sachin Tendulkar is my favourite Cricket player.The way he handeled pressure throughout his entire career of more than 24 years is quite amazing. 
+              
+              
+          </p>
+          <p>
+             Viswanathan Anand is my favourite Chess player.He is Five times World Champion in the game of Chess which is known to almost every second human in this planet.He deserves more honour from India.
+          </p>
+          <p>
+             I love to watch Lawn Tennis.Roger Federer is my favourite tennis player.He has won 18 grand slam titles till date.According to me, he is the greatest tennis player of all time.  
+          </p>
+          <p>
+             I love to read story books, especially detective stories very much.
+          </p>
+          <p>
+             I like listening to music specially soft ones.
+          </p>
+          <p>
+              I spend my leisure time by watching movies,playing chess,sudoku etc.
+          </p>
+          <p>
+              But the best I would like to do in my leisure time is reading a book, whatever may be the the topic it is about.
+          </p>`
+    },
 };
 
 function createTemplate (data) {
