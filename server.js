@@ -79,8 +79,6 @@ var articles = {
           </p>
           <p>
               Sachin Tendulkar is my favourite Cricket player.The way he handeled pressure throughout his entire career of more than 24 years is quite amazing. 
-              
-              
           </p>
           <p>
              Viswanathan Anand is my favourite Chess player.He is Five times World Champion in the game of Chess which is known to almost every second human in this planet.He deserves more honour from India.
