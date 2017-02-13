@@ -175,9 +175,9 @@ app.get('/ui/bodhi1.png', function (req, res) {
 });
 
 var names = [];
-app.get('/submit-name/:name', function(req, res){
-   //Get The Name Fron The Request
-   var name = req.params.name; //TO Do
+app.get('/submit-name', function(req, res){//URL: /submit-name?name=xxxx
+   //Get The Name from The Request
+   var name = req.query.name; //TO Do
    
    names.push(name);
    //JSON: JavaScript Object Notation
