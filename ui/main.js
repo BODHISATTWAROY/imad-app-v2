@@ -11,7 +11,9 @@ button.onclick = function(){
        if (request.readyState === XMLHttpRequest.DONE){
       // Take Some Action
            if (request.status === 200){
-              
+             var counter = request.responseText;
+             var span = document.getElementById('count');
+             span.innerHTML = counter.toString();
            }
        }
        //Not Done Yet
