@@ -42,7 +42,7 @@ var articles = {
 },
     'Article-Two': { 
          title: 'Article-Two',
-         heading1:  'Article Two',
+         heading1:  '<li>Article Two</li>',
          heading2:  'Family:BODHISATTWA ROY',
          date: 'Feb 11, 2017',
     content:
@@ -70,7 +70,7 @@ var articles = {
           },
     'Article-Three': {
          title: 'Article-Three',
-         heading1:  'Article Three',
+         heading1:  '<li>Article Three</li>',
          heading2:  'My Favourites:BODHISATTWA ROY',
          date: 'Feb 11, 2017',
     content:
