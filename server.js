@@ -127,6 +127,7 @@ function createTemplate (data) {
                <a href="Article-One" class="container">Article One</a>
                <a href="Article-Two" class="container">Article Two</a>
                <a href="Article-Three" class="container">Article Three</a>
+               <button class="btn btn-link glyphicon glyphicon-heart " id="like-btn" style="font-size:24px;text-decoration:none;"></button>
             </div>
            <hr/>
            <h3>
