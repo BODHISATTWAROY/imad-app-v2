@@ -127,8 +127,7 @@ function createTemplate (data) {
                <a href="Article-One" class="container">Article One</a>
                <a href="Article-Two" class="container">Article Two</a>
                <a href="Article-Three" class="container">Article Three</a>
-               <a class="gb_P" data-pid="23" href="https://mail.google.com/mail/" data-ved="0EMIuCAEoAA">Gmail</a>
-           </div>
+               </div>
            <hr/>
            <h3>
               ${heading1}
