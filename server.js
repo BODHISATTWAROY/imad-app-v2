@@ -127,7 +127,8 @@ function createTemplate (data) {
                <a href="Article-One" class="container">Article One</a>
                <a href="Article-Two" class="container">Article Two</a>
                <a href="Article-Three" class="container">Article Three</a>
-                <a class="dropdown-toggle" id="menu1" data-toggle="dropdown">Quick Links  
+                <a class="dropdown-toggle" id="menu1" data-toggle="dropdown">
+                    "Quick Links"  
 						  <span class="caret"></span></a>
 						  <ul class="dropdown-menu " role="menu" aria-labelledby="menu1">
 						    <li role="presentation"><a role="menuitem" href="#">Personal</a></li>
