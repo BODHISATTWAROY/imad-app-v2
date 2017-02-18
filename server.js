@@ -133,7 +133,7 @@ function createTemplate (data) {
 						    <li role="presentation"><a role="menuitem" href="#">Personal</a></li>
 						    <li role="presentation"><a role="menuitem" href="#">Professional</a></li>
 						    <li role="presentation"><a role="menuitem" href="#">Gallery</a></li>
-						    <li role="presentation"></li>
+						    <li role="presentation"><a role="mainitem" href="#">Favourites</a></li>
 						    <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
 						  </ul>
             </div>
