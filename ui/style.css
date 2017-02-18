@@ -28,3 +28,11 @@ body {
             padding-left: 20px;
             padding-right: 20px;
         }
+    .w3-hover-blue{
+           max-width: 1200px;
+            margin: 0 auto;
+            color: #2985b1;
+            font-family: sans-serif;
+            padding-left: 20px;
+            padding-right: 20px;
+   }     
