@@ -124,7 +124,7 @@ function createTemplate (data) {
            </div>
            <hr/>
            <div>
-             <li><a href="Article-One" class="w3-hover-blue"">Article One</a></li>
+               <a href="Article-One" class="container">Article One</a>
                <a href="Article-Two" class="container">Article Two</a>
                <a href="Article-Three" class="container">Article Three</a>
                 <a class="dropdown-toggle" id="menu1" data-toggle="dropdown">Quick Links  
