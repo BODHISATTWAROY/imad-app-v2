@@ -98,7 +98,7 @@ var articles = {
           </p>`
     },
       'Sign-Up': { 
-         title: 'Sign-Up-Page',
+         title: 'SIGN UP',
          heading1:  'CREATE YOUR OWN ACCOUNT',
 
         
@@ -127,7 +127,7 @@ var articles = {
           },
           
           'Sign-In': { 
-         title: 'Sign -In',
+         title: 'SIGN IN',
          heading1:  'SIGN IN TO YOUR ACCOUNT',
     content:
           `<p>
