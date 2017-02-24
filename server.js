@@ -107,7 +107,7 @@ var articles = {
           `<p>
              <input type="text" id="name" placeholder="User Name"></input>
             <input type="text" id="name" placeholder="Password"></input>
-            <input type="submit" value="Submit" id="Submit_btn"></input>
+            <input type="submit" value="Sign Up" id="submit_btn"></input>
            </p>`
           },
           
