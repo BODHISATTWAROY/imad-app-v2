@@ -158,7 +158,9 @@ function createTemplate (data) {
               ${heading2}
            </h4>
            <div>
+           <h5>
               ${heading3}
+            </h5>
            </div>
            <div>
              ${content}
