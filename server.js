@@ -108,7 +108,7 @@ var articles = {
           <h4>
             ALREADY A MEMBER?
             </h4>
-            
+            <br>
             <a href="Sign-In" class="container">Sign In</a>
             </p>
             <br>
@@ -147,22 +147,23 @@ var articles = {
          heading3: 'TELL ME SOMETHING ABOUT YOU',
     content:
         
-          `<p>
-          <h4>
-          NOT A MEMBER YET: SIGN UP NOW !
-          </h4>
-           <a href="Sign-Up" class="container">Sign Up</a>
-          <h4>
-            SIGN IN TO YOUR ACCOUNT !
+         `<p>
+            <h4>
+               SIGN IN TO YOUR ACCOUNT !
             </h4>
             <p>
-            <input type="text" id="name" placeholder="User Name"></input>
+              <input type="text" id="name" placeholder="User Name"></input>
             </p>
             <p>
-            <input type="text" id="name" placeholder="Password"></input>
+              <input type="text" id="name" placeholder="Password"></input>
             </p>
             <p>
-            <input type="submit" value="Sign In" id="submit_btn"></input>
+              <input type="submit" value="Sign In" id="submit_btn"></input>
+            <br>
+             <h4>
+               NOT A MEMBER YET: SIGN UP NOW !
+             </h4>
+               <a href="Sign-Up" class="container">Sign Up</a>
           </p>`
           },
 };
