@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 var articles = {
     'Article-One': {
-         title: 'Article-One',
+         title: 'Article One',
          heading1:  '<li>Article One</li>',
          heading2:  'Personal Information:BODHISATTWA ROY',
          date: 'Feb 11, 2017',
@@ -39,7 +39,7 @@ var articles = {
            </p>`    
 },
     'Article-Two': { 
-         title: 'Article-Two',
+         title: 'Article Two',
          heading1:  '<li>Article Two</li>',
          heading2:  'Family:BODHISATTWA ROY',
          date: 'Feb 11, 2017',
@@ -67,7 +67,7 @@ var articles = {
           </p>`
           },
     'Article-Three': {
-         title: 'Article-Three',
+         title: 'Article Three',
          heading1:  '<li>Article Three</li>',
          heading2:  'My Favourites:BODHISATTWA ROY',
          date: 'Feb 11, 2017',
@@ -97,7 +97,7 @@ var articles = {
               But the best I would like to do in my leisure time is reading a book, whatever may be the the topic it is about.
           </p>`
     },
-      'Sign-Up-Page': { 
+      'Sign-Up': { 
          title: 'Sign-Up-Page',
          heading1:  'CREATE YOUR OWN ACCOUNT',
 
@@ -178,7 +178,7 @@ function createTemplate (data) {
                <a href="Article-One" class="container">Article One</a>
                <a href="Article-Two" class="container">Article Two</a>
                <a href="Article-Three" class="container">Article Three</a>
-               <a href="Sign-Up-Page" class="container">Sign Up</a>
+               <a href="Sign-Up" class="container">Sign Up</a>
                <a href="Sign-In" class="container">Sign In</a>
                <a class="dropdown-toggle" id="menu1" data-toggle="dropdown">
                     "Quick Links"  
