@@ -119,13 +119,11 @@ var articles = {
             </p>
             <p>
              <input type="text" id="name" placeholder="Name"></input>
-             <input type="text" id="name" placeholder="Sex"></input>
+             <input type="text" id="name" placeholder="Date of Birth(dd/mm/yyyy)"></input>
              </p>
              <p>
+            <input type="text" id="name" placeholder="E-Mail id"></input>
             <input type="text" id="name" placeholder="Phone No."></input>
-            </p>
-            <p>
-            <input type="text" id="name" placeholder="E-Mail Id"></input>
             </p>
             <p>
             <input type="text" id="name" placeholder="UserName"></input>
