@@ -153,7 +153,7 @@ var articles = {
           </h4>
            <a href="Sign-Up" class="container">Sign Up</a>
           <h4>
-            SIGN IN TO YOUR ACCOUNT
+            SIGN IN TO YOUR ACCOUNT!
             </h4>
             <p>
             <input type="text" id="name" placeholder="User Name"></input>
