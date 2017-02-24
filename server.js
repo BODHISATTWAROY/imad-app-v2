@@ -131,7 +131,6 @@ var articles = {
           'Sign In': { 
          title: 'Sign In Page',
          heading1:  'SIGN IN TO YOUR ACCOUNT',
-         <hr/>
         
     content:
           `<p>
