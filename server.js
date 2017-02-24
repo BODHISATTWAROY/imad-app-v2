@@ -99,7 +99,7 @@ var articles = {
     },
       'Sign-Up': { 
          title: 'SIGN UP',
-         heading1: 'EXPLORE MYBLOG',
+         heading1: 'EXPLORE blog@YOU',
          heading2: 'LOOKING FOR SOMETHING MORE?',
          heading3: 'CREATE YOUR OWN ACCOUNT',
          
@@ -140,7 +140,7 @@ var articles = {
       'Sign-In': { 
          title: 'SIGN IN',
          heading1: 'WELCOME BACK',
-         heading2: 'ENJOY MYBLOG',
+         heading2: 'ENJOY blog@YOU',
          heading3: 'TELL ME SOMETHING ABOUT YOU',
     content:
         
