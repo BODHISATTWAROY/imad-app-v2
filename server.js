@@ -198,16 +198,16 @@ function createTemplate (data) {
                <a href="Sign-In" class="container">Sign In</a>
              </div>
            <hr/>
-           <h3>
+           <h2>
               ${heading1}
-           </h3>
-           <h4>
+           </h2>
+           <h3>
               ${heading2}
-           </h4>
+           </h3>
            <div>
-           <h5>
+           <h4>
               ${heading3}
-            </h5>
+            </h4>
            </div>
            <div>
              ${content}
