@@ -113,7 +113,6 @@ var articles = {
             <a href="Sign-In" class="container">Sign In</a>
             </p>
             <br>
-            <p>
             <h4>
             NOT A MEMBER YET? CREATE AN ACCOUNT!
             </h4>
