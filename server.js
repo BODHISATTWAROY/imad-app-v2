@@ -127,6 +127,7 @@ var articles = {
               I love my family very much.
           </p>`
           },
+          
           'Sign In': { 
          title: 'Sign In Page',
          heading1:  'SIGN IN TO YOUR ACCOUNT',
@@ -135,9 +136,7 @@ var articles = {
     content:
           `<p>
             
-          </p>
-          <p>
-              He is an Agent of L.I.C.I.
+               He is an Agent of L.I.C.I.
           </p>
           <p>
              My mother is Smt. Minati Roy.
