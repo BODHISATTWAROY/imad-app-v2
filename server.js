@@ -11,7 +11,7 @@ var articles = {
          title: 'Article One',
          heading1:  '<li>Article One</li>',
          heading2:  'Personal Information:BODHISATTWA ROY',
-         date: 'Feb 11, 2017',
+         heading3: 'Feb 11, 2017',
     content:
           `<p>
               I am Bodhisattwa Roy.
@@ -42,7 +42,7 @@ var articles = {
          title: 'Article Two',
          heading1:  '<li>Article Two</li>',
          heading2:  'Family:BODHISATTWA ROY',
-         date: 'Feb 11, 2017',
+         heading3: 'Feb 11, 2017',
     content:
           `<p>
              My father is Mr. Dilip Kumar Roy.
@@ -70,7 +70,7 @@ var articles = {
          title: 'Article Three',
          heading1:  '<li>Article Three</li>',
          heading2:  'My Favourites:BODHISATTWA ROY',
-         date: 'Feb 11, 2017',
+         heading3: 'Feb 11, 2017',
     content:
          `<p>
               I love to play Cricket and Chess.
@@ -99,17 +99,21 @@ var articles = {
     },
       'Sign-Up': { 
          title: 'SIGN UP',
-         heading1:  'CREATE YOUR OWN ACCOUNT',
-
+         heading1: 'Welcome To MyBlog',
+         heading2: 'CREATE YOUR OWN ACCOUNT',
+         heading3: 'Tell Me Who You Are?',
+         
         content:
           `<p>
              My father is Mr. Dilip Kumar Roy.
            </p>`
           },
           
-          'Sign-In': { 
+      'Sign-In': { 
          title: 'SIGN IN',
-         heading1:  'SIGN IN TO YOUR ACCOUNT',
+         heading1: 'Welcome To MyBlog',
+         heading2: 'SIGN IN TO YOUR ACCOUNT',
+         heading3: 'Tell Me Who You Are?',
     content:
           `<p>
                He is an Agent of L.I.C.I.
@@ -119,9 +123,9 @@ var articles = {
 
 function createTemplate (data) {
     var title = data.title;
-    var date = data.date;
     var heading1 = data.heading1;
     var heading2 = data.heading2;
+    var heading3 = data.heading3;
     var content =data.content;
     
   var htmlTemplate = 
@@ -145,17 +149,7 @@ function createTemplate (data) {
                <a href="Article-Three" class="container">Article Three</a>
                <a href="Sign-Up" class="container">Sign Up</a>
                <a href="Sign-In" class="container">Sign In</a>
-               <a class="dropdown-toggle" id="menu1" data-toggle="dropdown">
-                    "Quick Links"  
-						  <span class="caret"></span></a>
-						  <ul class="dropdown-menu " role="menu" aria-labelledby="menu1">
-						    <li role="presentation"><a role="menuitem" href="#">Personal</a></li>
-						    <li role="presentation"><a role="menuitem" href="#">Professional</a></li>
-						    <li role="presentation"><a role="menuitem" href="#">Gallery</a></li>
-						    <li role="presentation"><a role="mainitem" href="#">Favourites</a></li>
-						    <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
-						  </ul>
-            </div>
+             </div>
            <hr/>
            <h3>
               ${heading1}
@@ -164,7 +158,7 @@ function createTemplate (data) {
               ${heading2}
            </h4>
            <div>
-              ${date}
+              ${heading3}
            </div>
            <div>
              ${content}
