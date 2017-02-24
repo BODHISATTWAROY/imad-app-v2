@@ -105,7 +105,9 @@ var articles = {
          
         content:
           `<p>
-             My father is Mr. Dilip Kumar Roy.
+             <input type="text" id="name" placeholder="User Name"></input>
+            <input type="text" id="name" placeholder="Password"></input>
+            <input type="submit" value="Submit" id="Submit_btn"></input>
            </p>`
           },
           
