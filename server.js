@@ -99,7 +99,7 @@ var articles = {
               But the best I would like to do in my leisure time is reading a book, whatever may be the the topic it is about.
           </p>`
     },
-      'Sign Up': { 
+      'Sign-Up Page': { 
          title: 'Sign Up Page',
          heading1:  'CREATE YOUR OWN ACCOUNT',
 
@@ -128,7 +128,7 @@ var articles = {
           </p>`
           },
           
-          'Sign In': { 
+          'Sign-In': { 
          title: 'Sign In Page',
          heading1:  'SIGN IN TO YOUR ACCOUNT',
     content:
@@ -180,8 +180,8 @@ function createTemplate (data) {
                <a href="Article-One" class="container">Article One</a>
                <a href="Article-Two" class="container">Article Two</a>
                <a href="Article-Three" class="container">Article Three</a>
-               <a href="Create An Account" class="container">Sign Up</a>
-               <a href="Sign Into Your Account" class="container">Sign In</a>
+               <a href="Sign-Up Page" class="container">Sign Up</a>
+               <a href="Sign-In" class="container">Sign In</a>
                <a class="dropdown-toggle" id="menu1" data-toggle="dropdown">
                     "Quick Links"  
 						  <span class="caret"></span></a>
