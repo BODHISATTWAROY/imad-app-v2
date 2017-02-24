@@ -99,6 +99,62 @@ var articles = {
               But the best I would like to do in my leisure time is reading a book, whatever may be the the topic it is about.
           </p>`
     },
+      'Sign Up': { 
+         title: 'Sign Up Page',
+         heading1:  'CREATE YOUR OWN ACCOUNT',
+         <hr/>
+        
+    content:
+          `<p>
+             My father is Mr. Dilip Kumar Roy.
+          </p>
+          <p>
+              He is an Agent of L.I.C.I.
+          </p>
+          <p>
+             My mother is Smt. Minati Roy.
+          </p>
+          <p>
+             She is an Housewife.
+          </p>
+          <p>
+              My brother is Mr. Budhaditya Roy.
+          </p>
+          <p>
+             He Has completed his B.Sc. in Physics from Burdwan University in 2014 an completed his M.Sc. in Electronic Science from Jadavpur University in 2016.
+          </p>
+          <p>
+              I love my family very much.
+          </p>`
+          },
+          'Sign In': { 
+         title: 'Sign In Page',
+         heading1:  'SIGN IN TO YOUR ACCOUNT',
+         <hr/>
+        
+    content:
+          `<p>
+            
+          </p>
+          <p>
+              He is an Agent of L.I.C.I.
+          </p>
+          <p>
+             My mother is Smt. Minati Roy.
+          </p>
+          <p>
+             She is an Housewife.
+          </p>
+          <p>
+              My brother is Mr. Budhaditya Roy.
+          </p>
+          <p>
+             He Has completed his B.Sc. in Physics from Burdwan University in 2014 an completed his M.Sc. in Electronic Science from Jadavpur University in 2016.
+          </p>
+          <p>
+              I love my family very much.
+          </p>`
+          },
 };
 
 function createTemplate (data) {
