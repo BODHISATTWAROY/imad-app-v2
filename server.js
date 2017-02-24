@@ -18,8 +18,6 @@ var articles = {
            </p>
            <p>
               I am from Santoshpur,Hooghly.
-              
-              
            </p>
            <p>
              I am an Electrical Engineer.
