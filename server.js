@@ -158,7 +158,7 @@ var articles = {
               <input type="submit" value="Sign In" id="submit_btn"></input>
             <br>
              <h4>
-               NOT A MEMBER YET: SIGN UP NOW !
+               NOT A MEMBER YET? SIGN UP NOW !
              </h4>
                <a href="Sign-Up" class="container">Sign Up</a>
           </p>`
