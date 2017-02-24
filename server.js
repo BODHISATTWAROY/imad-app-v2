@@ -105,6 +105,20 @@ var articles = {
          
         content:
           `<p>
+          <h4>
+            ALREADY A MEMBER?
+            </h4>
+            </p>
+            <p>
+            <a href="Sign-In" class="container">Sign In</a>
+            </p>
+            <br>
+            <p>
+            <h4>
+            NOT A MEMBER YET? CREATE AN ACCOUNT!
+            </h4>
+            </p>
+            <p>
              <input type="text" id="name" placeholder="Name"></input>
              <input type="text" id="name" placeholder="Sex"></input>
              </p>
@@ -133,7 +147,16 @@ var articles = {
          heading2: 'SIGN IN TO YOUR ACCOUNT',
          heading3: 'Tell Me Who You Are?',
     content:
+        
           `<p>
+          <h4>
+          NOT A MEMBER YET: SIGN UP NOW!
+          </h4>
+           <a href="Sign-Up" class="container">Sign Up</a>
+          <h4>
+            SIGN IN TO YOUR ACCOUNT
+            </h4>
+            <p>
             <input type="text" id="name" placeholder="User Name"></input>
             </p>
             <p>
