@@ -102,7 +102,7 @@ var articles = {
       'Sign Up': { 
          title: 'Sign Up Page',
          heading1:  'CREATE YOUR OWN ACCOUNT',
-         <hr/>
+
         
     content:
           `<p>
