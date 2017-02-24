@@ -101,8 +101,7 @@ var articles = {
          title: 'SIGN UP',
          heading1:  'CREATE YOUR OWN ACCOUNT',
 
-        
-    content:
+        content:
           `<p>
              My father is Mr. Dilip Kumar Roy.
            </p>`
