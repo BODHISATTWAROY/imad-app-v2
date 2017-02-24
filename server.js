@@ -149,11 +149,11 @@ var articles = {
         
           `<p>
           <h4>
-          NOT A MEMBER YET: SIGN UP NOW!
+          NOT A MEMBER YET: SIGN UP NOW !
           </h4>
            <a href="Sign-Up" class="container">Sign Up</a>
           <h4>
-            SIGN IN TO YOUR ACCOUNT!
+            SIGN IN TO YOUR ACCOUNT !
             </h4>
             <p>
             <input type="text" id="name" placeholder="User Name"></input>
@@ -188,7 +188,6 @@ function createTemplate (data) {
            <div>
               <a href="/">Home</a>
            </div>
-           <hr/>
            <div>
                <a href="Article-One" class="container">Article One</a>
                <a href="Article-Two" class="container">Article Two</a>
