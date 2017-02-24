@@ -105,8 +105,24 @@ var articles = {
          
         content:
           `<p>
-             <input type="text" id="name" placeholder="User Name"></input>
-            <input type="text" id="name" placeholder="Password"></input>
+             <input type="text" id="name" placeholder="Name"></input>
+             <input type="text" id="name" placeholder="Sex"></input>
+             </p>
+             <p>
+            <input type="text" id="name" placeholder="Phone No."></input>
+            </p>
+            <p>
+            <input type="text" id="name" placeholder="E-Mail Id"></input>
+            </p>
+            <p>
+            <input type="text" id="name" placeholder="UserName"></input>
+            </p>
+            <p>
+            <input type="text" id="name" placeholder="Enter Your Password"></input>
+            </p>
+            <p>
+            <input type="text" id="name" placeholder="Confirm Your Password"></input>
+            </p>
             <input type="submit" value="Sign Up" id="submit_btn"></input>
            </p>`
           },
@@ -118,7 +134,13 @@ var articles = {
          heading3: 'Tell Me Who You Are?',
     content:
           `<p>
-               He is an Agent of L.I.C.I.
+            <input type="text" id="name" placeholder="User Name"></input>
+            </p>
+            <p>
+            <input type="text" id="name" placeholder="Password"></input>
+            </p>
+            <p>
+            <input type="submit" value="Sign In" id="submit_btn"></input>
           </p>`
           },
 };
