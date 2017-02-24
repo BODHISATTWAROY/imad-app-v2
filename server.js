@@ -9,7 +9,7 @@ app.use(morgan('combined'));
 var articles = {
     'Article-One': {
          title: 'Article One',
-         heading1:  '<li>Article One</li>',
+         heading1:  'Article One',
          heading2:  'Personal Information:BODHISATTWA ROY',
          heading3: 'Feb 11, 2017',
     content:
@@ -40,7 +40,7 @@ var articles = {
 },
     'Article-Two': { 
          title: 'Article Two',
-         heading1:  '<li>Article Two</li>',
+         heading1:  'Article Two',
          heading2:  'Family:BODHISATTWA ROY',
          heading3: 'Feb 11, 2017',
     content:
@@ -68,7 +68,7 @@ var articles = {
           },
     'Article-Three': {
          title: 'Article Three',
-         heading1:  '<li>Article Three</li>',
+         heading1:  'Article Three',
          heading2:  'My Favourites:BODHISATTWA ROY',
          heading3: 'Feb 11, 2017',
     content:
