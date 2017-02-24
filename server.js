@@ -126,7 +126,7 @@ function createTemplate (data) {
     var heading1 = data.heading1;
     var heading2 = data.heading2;
     var heading3 = data.heading3;
-    var content =data.content;
+    var content =  data.content;
     
   var htmlTemplate = 
     `<html>
