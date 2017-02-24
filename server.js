@@ -99,19 +99,18 @@ var articles = {
     },
       'Sign-Up': { 
          title: 'SIGN UP',
-         heading1: 'Welcome To MyBlog',
-         heading2: 'CREATE YOUR OWN ACCOUNT',
-         heading3: 'Tell Me Who You Are?',
+         heading1: 'EXPLORE MYBLOG',
+         heading2: 'LOOKING FOR SOMETHING MORE?',
+         heading3: 'CREATE YOUR OWN ACCOUNT',
          
         content:
           `<p>
           <h4>
             ALREADY A MEMBER?
             </h4>
-            </p>
             
             <a href="Sign-In" class="container">Sign In</a>
-        
+            </p>
             <br>
             <p>
             <h4>
@@ -143,9 +142,9 @@ var articles = {
           
       'Sign-In': { 
          title: 'SIGN IN',
-         heading1: 'Welcome To MyBlog',
-         heading2: 'SIGN IN TO YOUR ACCOUNT',
-         heading3: 'Tell Me Who You Are?',
+         heading1: 'WELCOME BACK',
+         heading2: 'ENJOY MYBLOG',
+         heading3: 'TELL ME SOMETHING ABOUT YOU',
     content:
         
           `<p>
