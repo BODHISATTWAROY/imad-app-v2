@@ -108,7 +108,6 @@ var articles = {
           <h4>
             ALREADY A MEMBER?
             </h4>
-            <br>
             <a href="Sign-In" class="container">Sign In</a>
             </p>
             <br>
