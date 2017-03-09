@@ -282,7 +282,7 @@ app.get('/ui/bodhi1.png', function (req, res) {
 });
 
   app.get('/ui/linkedin_icon.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'linked_icon.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'linkedin_icon.png'));
 });
 
 
