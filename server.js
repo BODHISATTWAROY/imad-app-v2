@@ -177,7 +177,7 @@ function createTemplate (data) {
     var title = data.title;
     var heading1 = data.heading1;
     var heading2 = data.heading2;
-    var heading3 = data.heading3;
+    var date = data.date;
     var content =  data.content;
     
   var htmlTemplate = 
@@ -208,7 +208,7 @@ function createTemplate (data) {
            </h3>
            <div>
            <h4>
-              ${heading3.toDateString()}
+              ${date.toDateString()}
             </h4>
            </div>
            <div>
