@@ -313,6 +313,11 @@ app.post('/login', function(req,res){
         res.send('You Are Not Logged In');
     }
  });
+ 
+ app.get('/logout', function(req, res){
+     delete req.session.auth;
+     res.send('Logged Out');
+ });
 
 
 var pool = new Pool(config);
