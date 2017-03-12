@@ -1,29 +1,6 @@
-//Counter Code
-var button = document.getElementById('counter');
 
 
-button.onclick = function(){
-    
-    //Ceate a Request Object
-     var request = new XMLHttpRequest();
-    //Capture the response and store it in a variable.
-   request.onreadystatechange = function(){
-       if (request.readyState === XMLHttpRequest.DONE){
-      // Take Some Action
-           if (request.status === 200){
-             var counter = request.responseText;
-             var span = document.getElementById('count');
-             span.innerHTML = counter.toString();
-           }
-       }
-       //Not Done Yet
-   };
-     //Make The Request
-     request.open('GET', 'http://bodhisattwaroy.imad.hasura-app.io/counter', true);
-     request.send(null);
-};
-
-//Submit Name
+//Submit Username/Password to Log In
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
@@ -37,14 +14,12 @@ submit.onclick = function() {
       // Take Some Action
            if (request.status === 200){
                 //Capture A List Of Name And Render It As A List
-    var names = request.responseText;
-    names = JSON.parse(names);
-    var list = '';
-    for (var i=0; i< names.length; i++){
-        list += '<li>' + names[i] + '</li>';
-    }
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+          console.log('User Logged In');
+          alert('Logged In Successfully');
+           } else if (request.status === 403) {
+               alert('Username/Password is Incorrect');
+           } else if (request.status === 500) {
+               alert('Something Went Wrong On The Server');
            }
        }
        //Not Done Yet
@@ -54,9 +29,13 @@ submit.onclick = function() {
   
     
      //Make The Request
-     var nameInput = document.getElementById('name');
-     var name = nameInput.value;
-     request.open('GET', 'http://bodhisattwaroy.imad.hasura-app.io/submit-name?name=' +  name, true);
-     request.send(null);
+    
+     var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      console.log(username);
+      console.log(password);
+          request.open('POST', 'http://bodhisattwaroy.imad.hasura-app.io/login', true);
+          request.setRequestHeader('Content-Type', 'application/json');
+     request.send(JSON.stringify({username: username, password: password}));
      
 };
