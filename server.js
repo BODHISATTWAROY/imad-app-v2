@@ -252,7 +252,7 @@ app.get('/hash/:input', function(req,res) {
     res.send(hashedString);
 });
 
-app.post('/Sign-Up', function(req, res){
+app.post('/articles/Sign-Up', function(req, res){
     //username, password
     //{"username": "bodhisattwa", "password": "password"}
     //JSON
