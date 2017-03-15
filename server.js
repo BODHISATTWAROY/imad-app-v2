@@ -253,7 +253,7 @@ app.get('/hash/:input', function(req,res) {
 });
 
 
-app.post('/add.php', function(req, res){
+app.post('/add', function(req, res){
     //username, password
     //{"username": "bodhisattwa", "password": "password"}
     //JSON
