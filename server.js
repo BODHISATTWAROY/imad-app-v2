@@ -252,6 +252,23 @@ app.get('/hash/:input', function(req,res) {
     res.send(hashedString);
 });
 
+ <?php 
+        $db = pg_connect('host=localhost dbname=contacts user=contacts password=firstphp'); 
+
+        $firstname = pg_escape_string($_POST['firstname']); 
+        $surname = pg_escape_string($_POST['surname']); 
+        $emailaddress = pg_escape_string($_POST['emailaddress']); 
+
+        $query = "INSERT INTO friends(firstname, surname, emailaddress) VALUES('" . $firstname . "', '" . $surname . "', '" . $emailaddress . "')";
+        $result = pg_query($query); 
+        if (!$result) { 
+            $errormessage = pg_last_error(); 
+            echo "Error with query: " . $errormessage; 
+            exit(); 
+        } 
+        printf ("These values were inserted into the database - %s %s %s", $firstname, $surname, $emailaddress); 
+        pg_close(); 
+        ?> 
 
 app.post('/create-user', function(req, res){
     //username, password
