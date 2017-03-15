@@ -371,9 +371,7 @@ app.get('/articles/:articleName', function(req, res){
     
 });
 
-app.get('/ui/add.php', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'add.php'));
-});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
