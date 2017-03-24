@@ -222,6 +222,15 @@ function createTemplate (data) {
            <div>
              ${content}
            </div>
+           <hr/>
+             <h4>Comments</h4>
+              <div id="comment_form">
+              </div>
+              <div id="comments">
+                <center>Loading comments...</center>
+              </div>
+          </div>
+          <script type="text/javascript" src="/ui/article.js"></script>
          </div>
       </body>      
     
@@ -308,6 +317,8 @@ app.post('/login', function(req,res){
        }
     });
 });
+
+
  app.get('/check-login', function(req, res){
     if (req.session && req.session.auth && req.session.auth.userId) {
         res.send('You Are Logged In: ' + req.session.auth.userId.toString());
