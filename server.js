@@ -231,7 +231,6 @@ function createTemplate (data) {
               </div>
           </div>
           <script type="text/javascript" src="/ui/article.js"></script>
-         </div>
       </body>      
     
     </html>
@@ -262,7 +261,7 @@ app.get('/hash/:input', function(req,res) {
 });
 
 
-app.post('/create-user', function(req, res){
+app.post('/create-user', function (req, res) {
     //username, password
     //{"username": "bodhisattwa", "password": "password"}
     //JSON
@@ -280,11 +279,11 @@ app.post('/create-user', function(req, res){
     });
 });
 
-app.post('/login', function(req,res){
+app.post('/login', function (req, res) {
       var username = req.body.username;
     var password = req.body.password;
    
-    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result){
+    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
         if (err) {
            res.status(500).send(err.toString());
        } else{
@@ -386,7 +385,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                             if (err) {
                                 res.status(500).send(err.toString());
                             } else {
-                                res.status(200).send('Comment inserted!')
+                                res.status(200).send('Comment inserted!');
                             }
                         });
                 }
@@ -398,12 +397,12 @@ app.post('/submit-comment/:articleName', function (req, res) {
 });
 
 
-app.get('/articles/:articleName', function(req, res){
+app.get('/articles/:articleName', function (req, res) {
     //articleName == Article-One
     //articles[articleName] == {} content object for Article-One
    
      //SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
-     pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function (err,result){
+     pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function (err, result) {
         if (err) {
             res.status(500).send(err.toString());
         } else {
