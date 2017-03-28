@@ -12,13 +12,13 @@ document.getElementById('login_area').innerHTML = loginHtml;
 //Submit Username/Password to Log In
 
 var submit = document.getElementById('login_btn');
-submit.onclick = function() {
+submit.onclick = function () {
     
     //Create a Request Object
     var request = new XMLHttpRequest();
     
       //Capture the response and store it in a variable.
-   request.onreadystatechange = function(){
+   request.onreadystatechange = function () {
        if (request.readyState === XMLHttpRequest.DONE) {
       // Take Some Action
            if (request.status === 200){
