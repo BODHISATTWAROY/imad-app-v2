@@ -32,7 +32,7 @@ submit.onclick = function () {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
               }
-              loadLogin ();
+              loadLogin();
            }
        //Not Done Yet
    };
