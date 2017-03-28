@@ -19,15 +19,12 @@ submit.onclick = function() {
     
       //Capture the response and store it in a variable.
    request.onreadystatechange = function(){
-       if (request.readyState === XMLHttpRequest.DONE){
+       if (request.readyState === XMLHttpRequest.DONE) {
       // Take Some Action
            if (request.status === 200){
                 submit.value = 'Sucess!';
-         
-          alert('Logged In Successfully');
            } else if (request.status === 403) {
                 submit.value = 'Invalid credentials. Try again?';
-               alert('Username/Password is Incorrect');
            } else if (request.status === 500) {
                alert('Something Went Wrong On The Server');
                     submit.value = 'Login';
