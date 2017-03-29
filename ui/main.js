@@ -7,53 +7,47 @@ function loadLoginForm () {
         <input type="submit" id="login_btn" value="Login" />
         <input type="submit" id="register_btn" value="Register" />
         `;
-document.getElementById("login_area").innerHTML = loginHtml;
-
-//Submit Username/Password to Log In
-
-var submit = document.getElementById('login_btn');
-submit.onclick = function () {
+    document.getElementById('login_area').innerHTML = loginHtml;
     
-    //Create a Request Object
-    var request = new XMLHttpRequest();
-    
-      //Capture the response and store it in a variable.
-   request.onreadystatechange = function () {
-       if (request.readyState === XMLHttpRequest.DONE) {
-      // Take Some Action
-           if (request.status === 200){
-                submit.value = 'Sucess!';
-           } else if (request.status === 403) {
-                submit.value = 'Invalid credentials. Try again?';
-           } else if (request.status === 500) {
-               alert('Something Went Wrong On The Server');
-                    submit.value = 'Login';
+    // Submit username/password to login
+    var submit = document.getElementById('login_btn');
+    submit.onclick = function () {
+        // Create a request object
+        var request = new XMLHttpRequest();
+        
+        // Capture the response and store it in a variable
+        request.onreadystatechange = function () {
+          if (request.readyState === XMLHttpRequest.DONE) {
+              // Take some action
+              if (request.status === 200) {
+                  submit.value = 'Sucess!';
+              } else if (request.status === 403) {
+                  submit.value = 'Invalid credentials. Try again?';
+              } else if (request.status === 500) {
+                  alert('Something went wrong on the server');
+                  submit.value = 'Login';
               } else {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
               }
               loadLogin();
-           }
-       //Not Done Yet
-   };
+          }  
+          // Not done yet
+        };
+        
+        // Make the request
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        console.log(username);
+        console.log(password);
+        request.open('POST', '/login', true);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(JSON.stringify({username: username, password: password}));  
+        submit.value = 'Logging in...';
+        
+    };
     
-    //Make A Request To The Server And Send The Name
-  
-    
-     //Make The Request
-    
-     var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
-      console.log(username);
-      console.log(password);
-          request.open('POST', '/login', true);
-          request.setRequestHeader('Content-Type', 'application/json');
-     request.send(JSON.stringify({username: username, password: password}));
-      submit.value = 'Logging in...';
-     
-};
-
-var register = document.getElementById('register_btn');
+    var register = document.getElementById('register_btn');
     register.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
@@ -86,7 +80,7 @@ var register = document.getElementById('register_btn');
 }
 
 function loadLoggedInUser (username) {
-    var loginArea = document.getElementById("login_area");
+    var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
         <h3> Hi <i>${username}</i></h3>
         <a href="/logout">Logout</a>
@@ -101,7 +95,7 @@ function loadLogin () {
             if (request.status === 200) {
                 loadLoggedInUser(this.responseText);
             } else {
-                loadLoginForm ();
+                loadLoginForm();
             }
         }
     };
@@ -124,10 +118,10 @@ function loadArticles () {
                     <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
-                content += "</ul>";
+                content += "</ul>"
                 articles.innerHTML = content;
             } else {
-                articles.innerHTML('Oops! Could not load all articles!');
+                articles.innerHTML('Oops! Could not load all articles!')
             }
         }
     };
