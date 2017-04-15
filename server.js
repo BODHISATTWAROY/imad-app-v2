@@ -7,10 +7,10 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user: "bodhisattwaroy",
-    database: "bodhisattwaroy",
-    host: "db.imad.hasura-app.io",
-    port: "5432",
+    user: 'bodhisattwaroy',
+    database: 'bodhisattwaroy',
+    host: 'db.imad.hasura-app.io',
+    port: '5432',
     password: process.env.DB_PASSWORD
 };
 
@@ -19,7 +19,7 @@ app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(session({
     secret: 'someRandomSecretValue',
-    cookie: {maxAge: 1000 * 60 * 60 * 24 *30}
+    cookie: { maxAge: 1000 * 60 * 60 * 24 *30}
 }));
 
 var articles = {
